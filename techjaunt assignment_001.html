@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+
+        .container h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: green;
+            color: #ffffff;
+            width: 100%;
+            height: 50px;
+            margin-top: 0;
+        }
+
+        .container ul li a {
+            text-decoration: none;
+            cursor: pointer;
+            color: green;
+            margin-left: 0;
+
+        }
+
+        .container ul li {
+            list-style-type: none;
+            display: inline-block;
+            align-items: center;
+            padding: 5px;
+            justify-content: space-around;
+            align-items: flex-start;
+
+
+        }
+
+        .image_container img {
+            height: 200px;
+            width: 400px;
+        }
+
+        .list-item ol li {
+            list-style-type: disc;
+        }
+
+        tr td {
+            text-align: center;
+        }
+
+        .contact_info form div {
+            margin-bottom: 15px;
+        }
+        .message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+#Label_style {
+    font-weight: bold;
+    
+}
+
+textarea {
+    width: 200px;
+    height: 100px;
+    border-radius: 4px;
+    resize: none;
+    margin-top: 2px;
+}
+button{
+    margin-top: 5px;
+    padding: 5px 10px;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>My First Webpage</h1>
+
+        <ul>
+            <li><a href="">Webpage Content</a></li>
+            <li><a href="">Infomation Table</a></li>
+            <li><a href="">Contact Form</a></li>
+        </ul>
+        <div class="image_container">
+            <img src="https://images.unsplash.com/photo-1532892939738-86e29515dc9e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="img">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae sunt rem expedita, ratione ab asperiores
+                quo eos aspernatur facere ullam, tempora similique exercitationem dolorum! Nulla quasi voluptatibus
+                deserunt labore dolore! </p>
+        </div>
+        <a href="https://www.techyjaunt.com/" target="_blank">visit TechJaunt</a>
+        <!--webcontent-->
+        <div class="webContent">
+            <h2>Webpage Content</h2>
+            <div class="list-item">
+                <ol>
+                    <li>Introduction</li>
+                    <li>Table of Information</li>
+                    <li>Contact form</li>
+                </ol>
+            </div>
+        </div>
+        <div class="info_tab">
+            <h2>Table of information</h2>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <tr>
+                    <th>Items</th>
+                    <th>Description</th>
+                    <th>Quantity</th>
+                </tr>
+
+                <tr>
+                    <td>Pen</td>
+                    <td>black ink Pen</td>
+                    <td>5</td>
+                </tr>
+
+                <tr>
+                    <td>Notebooks</td>
+                    <td>Spiral bound Notebook</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Markers</td>
+                    <td>Permanent marker</td>
+                    <td>2</td>
+                </tr>
+            </table>
+        </div>
+        <!--webcontent-->
+
+        <!--contact form-->
+        <div class="contact_info">
+            <h2>Contact Form</h2>
+            <form action="">
+                <div class="name_input">
+                    <label for="name" id="Label_style">Name</label>
+                    <input type="text">
+                </div>
+
+                <div class="emailInput">
+                     <label for="email" id="Label_style">Email</label>
+                    <input type="email" name="email" id="input_style">
+                </div>
+
+        </div>
+
+        <div class="password">
+            <label for="password" id="Label_style">Password</label>
+            <input type="password" id="input_style">
+        </div>
+
+        <div class="genderInput">
+            <label for="gender" id="Label_style">Gender</label>
+            <input type="radio" name="gender" id="Label_style" value="Male"> Male
+            <input type="radio" name="gender" id="input_style" value="Female"> Female
+
+        </div>
+
+        <div class="sub">
+            <label for="subscribe" id="Label_style">subscribe</label>
+            <input type="checkbox" name="subscribe" id="input_style"> Yes, I want to subscribe!
+        </div>
+
+        <div class="item_qty">
+            <label for="Label_style" id="Label_style">Number of items</label>
+            <input type="text" id="input_style">
+        </div>
+        <div class="dateInput">
+            <label for="date" id="Label_style">Date</label>
+            <input type="date" name="" id="input_style">
+        </div>
+        <div class="message">
+            <label for="message" id="Label_style">Message</label>
+
+            <textarea name="" id=""></textarea>
+        </div>
+        <button type="submit">Submit</button>
+            </form>
+        <!--contact form-->
+    </div>
+
+</body>
+
+</html>
